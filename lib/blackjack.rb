@@ -32,10 +32,9 @@ end
 
 def hit?
   prompt_user
-  hit_or_stay = get_user_input
-  if hit_or_stay == "h"
+  if get_user_input == "h"
     return initial_round + deal_card
-  elsif hit_or_stay == "s"
+  elsif get_user_input == "s"
     return initial_round
   else
     invalid_command
