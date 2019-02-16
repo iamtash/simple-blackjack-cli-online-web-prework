@@ -37,7 +37,7 @@ def hit?(current_card_total)
     hit = deal_card
     return hit + current_card_total
   elsif hit_or_stay == "s"
-    return initial_round
+    return current_card_total
   else
     invalid_command
     prompt_user
